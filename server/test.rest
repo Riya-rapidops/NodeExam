@@ -1,0 +1,55 @@
+
+POST http://localhost:8000/user
+Content-Type: application/json
+
+{
+  "name": "riya",
+  "email": "riya@gmail.com",
+  "password": "admin",
+  "phone": "7878788978",
+  "age": 10,
+  "gender": "female",
+  "address": "sdzdsjcvhdszjhdsfcsf"
+}
+###
+
+GET http://localhost:8000/user
+###
+
+######################################################
+
+POST http://localhost:8000/auth
+Content-Type: application/json
+
+{
+    "email": "riya@gmail.com", 
+    "password" : "admin"
+}
+###
+
+#####################################################
+
+
+POST http://localhost:8000/post
+Content-Type: application/json
+
+{
+    "title": "new Post3", 
+    "description" : "Post Data2",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjM5ZDNhNGU3Y2Q5YzM2OTE4OWY3YWY2IiwibmFtZSI6InJpeWEiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInBob25lIjoiMTIzNDU2Nzg5MCJ9LCJpYXQiOjE2NzEyNTUyOTh9.Tb19H0seUqh7YMopv-O4DSFveFdQtTWDu_BaaCR5G5U"
+}
+
+###
+
+GET http://localhost:8000/post
+###
+
+
+DELETE http://localhost:8000/post/639d5523034e5b974c89af36
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjM5ZDNhNGU3Y2Q5YzM2OTE4OWY3YWY2IiwibmFtZSI6InJpeWEiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInBob25lIjoiMTIzNDU2Nzg5MCJ9LCJpYXQiOjE2NzEyNTUyOTh9.Tb19H0seUqh7YMopv-O4DSFveFdQtTWDu_BaaCR5G5U"
+}
+
+###
